@@ -15,73 +15,70 @@
 
   <body>
 
-    <header>
-      <a href="index.html">
-        <h1>Photo album</h1>
-        <h2></h2>
-      </a>
-    </header>
     
+    <div id="container">
     
-    <ul id="galleries">
-     <li>
-       <a href="Memes.html">
-         <h3>Memes</h3>
-         <div class="meta">
-           31 photos<br />
-           19 Nov 2017 - 20 Nov 2017
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/Memes/Vote Communist.png" /></li><li><img src="media/thumbs/Memes/tfw lenin.png" /></li><li><img src="media/thumbs/Memes/capitalist hunting.jpg" /></li><li><img src="media/thumbs/Memes/Socialism Bike.jpg" /></li>     </ul>
-       </a>
-     </li>
-     <li>
-       <a href="Right-Opposition.html">
-         <h3>Right-Opposition</h3>
-         <div class="meta">
-           21 photos<br />
-           19 Nov 2017 - 19 Nov 2017
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/Right-Opposition/goodnight altright.jpg" /></li><li><img src="media/thumbs/Right-Opposition/not real fascism.png" /></li><li><img src="media/thumbs/Right-Opposition/maga triggered snowflake.jpg" /></li><li><img src="media/thumbs/Right-Opposition/libretarian.png" /></li>     </ul>
-       </a>
-     </li>
-     <li>
-       <a href="GeneralContent.html">
-         <h3>General Content</h3>
-         <div class="meta">
-           46 photos<br />
-           19 Nov 2017 - 19 Nov 2017
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/General Content/y116i0lv124z.png" /></li><li><img src="media/thumbs/General Content/sW3czct.jpg" /></li><li><img src="media/thumbs/General Content/Presidents-Park-Anti-War-7.png" /></li><li><img src="media/thumbs/General Content/NzUpif5.jpg" /></li>     </ul>
-       </a>
-     </li>
-     <li>
-       <a href="Statistics-Inforgraphics.html">
-         <h3>Statistics-Inforgraphics</h3>
-         <div class="meta">
-           15 photos<br />
-           19 Nov 2017 - 20 Nov 2017
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/Statistics-Inforgraphics/3sxlgwOFBtMPfwSQqNOCoCOyeGYQLTFeov5Rm5ItnpI.png" /></li><li><img src="media/thumbs/Statistics-Inforgraphics/16508926_1299975520024947_8882993824790880794_n.jpg" /></li><li><img src="media/thumbs/Statistics-Inforgraphics/17103502_763957007092793_8944338818079177246_n.jpg" /></li><li><img src="media/thumbs/Statistics-Inforgraphics/170221144531-atm-fees-2016-780x439.jpg" /></li>     </ul>
-       </a>
-     </li>
-     <li>
-       <a href="Protest-Activism.html">
-         <h3>Protest-Activism</h3>
-         <div class="meta">
-           14 photos<br />
-           19 Nov 2017 - 19 Nov 2017
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/Protest-Activism/2e505897fcbd2c5abe4751ec47f0487d4f77e46f.jpg" /></li><li><img src="media/thumbs/Protest-Activism/2X0VsBj.jpg" /></li><li><img src="media/thumbs/Protest-Activism/4jMwuB5.jpg" /></li><li><img src="media/thumbs/Protest-Activism/5k54dx2o3btz.jpg" /></li>     </ul>
-       </a>
-     </li>
-    </ul>
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photo album</a></h1>
+      </header>
     
-    <ul id="media">
-    </ul>
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>
+      </nav>
     
-    <!--
-      Optional footer
-    -->
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="Memes.html" style="background-image: url('media/large/Memes/Vote Communist.png')">
+            <div class="info">
+              <h3>Memes</h3>
+              <div class="summary">31 photos</div>
+              <div class="date">19 Nov 2017 - 20 Nov 2017</div>
+            </div>
+          </a><a href="Right-Opposition.html" style="background-image: url('media/large/Right-Opposition/goodnight altright.jpg')">
+            <div class="info">
+              <h3>Right-Opposition</h3>
+              <div class="summary">21 photos</div>
+              <div class="date">19 Nov 2017 - 19 Nov 2017</div>
+            </div>
+          </a><a href="GeneralContent.html" style="background-image: url('media/large/General Content/y116i0lv124z.png')">
+            <div class="info">
+              <h3>General Content</h3>
+              <div class="summary">46 photos</div>
+              <div class="date">19 Nov 2017 - 19 Nov 2017</div>
+            </div>
+          </a><a href="Statistics-Inforgraphics.html" style="background-image: url('media/large/Statistics-Inforgraphics/3sxlgwOFBtMPfwSQqNOCoCOyeGYQLTFeov5Rm5ItnpI.png')">
+            <div class="info">
+              <h3>Statistics-Inforgraphics</h3>
+              <div class="summary">15 photos</div>
+              <div class="date">19 Nov 2017 - 20 Nov 2017</div>
+            </div>
+          </a><a href="Protest-Activism.html" style="background-image: url('media/large/Protest-Activism/2e505897fcbd2c5abe4751ec47f0487d4f77e46f.jpg')">
+            <div class="info">
+              <h3>Protest-Activism</h3>
+              <div class="summary">14 photos</div>
+              <div class="date">19 Nov 2017 - 19 Nov 2017</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Optional footer
+      -->
+    
+    </div>
 
     <!-- Video loader -->
     <div id="videos">

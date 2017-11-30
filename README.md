@@ -1,2 +1,0 @@
-# infocrisisgallery
-# infocrisis
